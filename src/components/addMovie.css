@@ -1,0 +1,42 @@
+.movie-input label {
+  font-weight: 500;
+}
+
+.movie-input .form-control {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1.7px solid #ddd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* effet au clic (focus) comme barre de recherche */
+.movie-input .form-control:focus {
+  border-color: #e5091488;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+  outline: none;
+}
+
+.titleform {
+    font-weight: 700;
+}
+
+#but1 {
+  margin: 130px 0px -30px 0px;
+  font-weight: 500;
+  padding-top: 3px;
+  transition: 0.3s ease;
+}
+
+#but1:hover {
+  font-weight: 700;
+  border: 2px solid rgba(229, 9, 20, 0.329);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.329);
+}
+
+.movie-img img {
+  width: 100%;
+}
+
+
