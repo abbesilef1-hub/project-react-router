@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import './navbarr.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import ReactStars from 'react-stars';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +16,7 @@ function Navbarr({settext, setrate}) {
     <Navbar bg="dark" data-bs-theme="dark" className='nav'>
       <Container fluid>
         <Navbar.Brand href="#" className='icon'>
-            <img src='https://elementor.dostguru.com/cms/animex/wp-content/uploads/2020/12/logo-1.png'/>
+            <img src='https://elementor.dostguru.com/cms/animex/wp-content/uploads/2020/12/logo-1.png' alt='imgnavbarr'/>
             <h2>Movies</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

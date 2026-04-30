@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './main.css'
-import { Button } from 'react-bootstrap';
 
 function Main() {
     const images = [
@@ -21,7 +20,7 @@ function Main() {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <>

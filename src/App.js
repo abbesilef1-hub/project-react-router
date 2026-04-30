@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarr from './components/Navbarr';
@@ -13,7 +12,7 @@ import Trailer from './components/Trailer';
 function App() {
   // const [movies, setmovies] = useState([
     // action
-    const [action, setaction] = useState([
+    const [action] = useState([
     {
       id: Math.random(),
       titre: "Mad Max: Fury Road",
@@ -154,7 +153,7 @@ function App() {
     ]);
     
     //  comedy
-    const [comedy, setcomedy] = useState([
+    const [comedy] = useState([
       {
       id: Math.random(),
       titre: "The Mask",
@@ -295,7 +294,7 @@ function App() {
     
     
     // horror
-    const [herror, setherror] = useState([
+    const [herror] = useState([
       {
       id: Math.random(),
       titre: "The Conjuring",
@@ -430,7 +429,7 @@ function App() {
     ]);
     
     // drama
-    const [drama, setdrama] = useState([
+    const [drama] = useState([
     {
       id: Math.random(),
       titre: "The Shawshank Redemption",

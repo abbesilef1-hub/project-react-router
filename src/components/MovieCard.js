@@ -13,7 +13,7 @@ function MovieCard({el}) {
           <div className="movie">
             <div className="menu"></div>
             <div className="movie-img">
-              <img src={el.posterURL} />
+              <img src={el.posterURL} alt='imgsmov'/>
             </div>
             <div className="text-movie-cont">
               <div className="mr-grid">

@@ -34,7 +34,7 @@ function AddMovie({movies, setadd}) {
           <Modal.Title className='titleform'>Add Movie</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{display:"flex", flexDirection:"row", gap:"30px"}}>
-          <img style={{width:"50%", height:"380px", left:"10px"}} src='https://preview.redd.it/red-posters-v0-xinf8e5u8nre1.jpeg?width=640&crop=smart&auto=webp&s=5bf95421012a0ff92446bd903d50789585313999'/>
+          <img style={{width:"50%", height:"380px", left:"10px"}} src='https://preview.redd.it/red-posters-v0-xinf8e5u8nre1.jpeg?width=640&crop=smart&auto=webp&s=5bf95421012a0ff92446bd903d50789585313999' alt='error'/>
           <Form>
             <div className='droiteform'>
       <Form.Group className="mb-3 movie-input" controlId="formBasicEmail">
