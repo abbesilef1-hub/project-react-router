@@ -84,10 +84,9 @@ body {
   padding: 8px 7px 0px 9px;
   width: 140px;
   height: 32px;
-  /* margin-top: -10px; */
 }
 .watch-btn h3 i {
-  font-size: 14px;
+  font-size: 14px !important;
   margin-right: 2px;
   position: relative;
   float: left;
@@ -115,10 +114,12 @@ h1 {
   font-weight: 400;
 }
 
-h3 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #e50914;
+.watch-btn h3 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #e50914 !important;
+  text-align: center;
+  margin-top: 0px;
 }
 
 h5 {

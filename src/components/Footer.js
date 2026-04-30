@@ -24,7 +24,7 @@ function Footer() {
         </div>
     </div>
     <div className='bas'>
-    <h6>Copyright © 2025 Animex. All Rights Reserved.</h6>
+    <h6>Copyright © 2026 Animex. All Rights Reserved.</h6>
     </div>
     </div>
   )

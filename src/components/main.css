@@ -22,3 +22,86 @@
 .slider img.active {
     opacity: 1;
 }
+
+.textmain {
+    position: relative;
+    margin: 100px 0px 0px 90px;
+    width: 480px;
+}
+
+.textmain h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.textmain h6 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+span {
+    color: #e50914;
+}
+
+h6 {
+    margin: 20px 50px 20px 0px;
+}
+
+.bouton1 {
+    background-color: #e50914;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 140px;
+    height: 45px;
+    border: 2px solid #e50914;
+}
+
+.bouton1:hover {
+    background-color: white;
+    color: #e50914;
+}
+
+.bouton2 {
+    width: 258px;
+    height: 55px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    fill: white;
+}
+
+.bouton2:hover {
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+    color: #e50914;
+    fill: #e50914;
+}
+
+.bouton2 svg {
+    width: 65px;
+    height: 65px;
+    /* fill: white; */
+}
+
+.bouton2 svg:hover {
+    fill: #e50914;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 40px;
+    margin-left: 3px;
+    /* margin-right: 53px; */
+}

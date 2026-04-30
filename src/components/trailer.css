@@ -1,0 +1,116 @@
+.movietrailer h1 {
+  color: #e50914;
+  /* margin: 10px; */
+  text-align: center;
+  font-size: 4rem ;
+  font-weight: 700;
+  margin: 85px 0px 50px 0px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+.part2 h2 {
+  color: white;
+  /* margin: 10px; */
+  text-align: center;
+  font-size: 3rem ;
+  font-weight: 700;
+  margin: 25px 0px 60px 0px;
+}
+
+.part2 h1 {
+    color: #e50914;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.part2 img {
+    width: 350px;
+    height: 220px;
+}
+
+.listimage {
+    display: flex;
+    gap: 25px;
+    margin: 0px 20px 0px 60px;
+}
+
+.part2 p {
+    color: white;
+    margin: 20px 55px 20px 57px;
+    letter-spacing: 0px;
+}
+
+h4 {
+    margin: 50px 57px 0px 57px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e50914;
+}
+
+.persons {
+    margin: 50px 50px 50px 50px;
+    /* line-height: 0.5; */
+    padding: 0px 0px;
+}
+
+.persons h4 {
+    margin: -10px 20px 18px 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    /* text-decoration: underline; */
+}
+
+.persons p {
+    color: white;
+    margin: 10px 55px 20px 57px;
+    letter-spacing: 0px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.resumé h4 {
+    margin: 35px 40px -5px 57px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.1;
+    /* text-decoration: underline; */
+}
+
+.stars {
+    margin: -20px 0px 0px 100px;
+}
+
+.buthome button {
+    margin: 30px 70px 20px 100px;
+    width: 140px;
+    height: 35px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1.2px solid white;
+    background: #e50914;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.buthome button:hover {
+    background-color: white;
+    color: #e50914;
+    border: 2px solid #e50914;
+    font-weight: 700;
+    font-size: 1rem;
+}
+

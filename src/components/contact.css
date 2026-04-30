@@ -1,0 +1,168 @@
+.forms {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact h1 {
+    color: #e50914;
+    font-size: 4rem ;
+    font-weight: 700;
+    /* margin: 85px 0px 50px 0px; */
+    text-align: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    margin: 50px 0px 20px 100px;
+    padding: 0px 20px;
+    gap: 5px;
+    border: none;
+    background-color: #3e3a46;
+    border-radius: 20px;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    color: white;
+}
+
+input {
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  background-color: #28252f;
+}
+
+input:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.6);
+    outline: none;
+}
+
+textarea {
+  width: 450px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #28252f;
+  border: 1.5px solid white;
+}
+
+textarea:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.6);
+    outline: none;
+}
+
+select {
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #28252f;
+    border: 1.5px solid white;
+}
+
+select:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.6);
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    /* font-style: italic; */
+}
+
+textarea::placeholder {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.choix {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+select {
+  color: gray;
+}
+
+select:valid {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+
+.form2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    margin: 50px 0px 20px 55px;
+    padding: 0px 20px;
+    gap: 5px;
+    border: none;
+    background-color: #3e3a46;
+    border-radius: 20px;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px 0px -180px;
+    gap: 70px;
+}
+
+svg {
+    width: 30px;
+    height: 20px;
+    fill: #e50914;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.send {
+    width: 140px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1.2px solid white;
+    background-color: #e50914;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.send:hover {
+    background-color: white;
+    color: #e50914;
+    border: 2px solid #e50914;
+    font-weight: 700;
+    font-size: 1rem;
+}

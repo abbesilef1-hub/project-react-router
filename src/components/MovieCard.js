@@ -1,11 +1,13 @@
 import React from 'react'
 import './moviecard.css';
 import ReactStars from 'react-stars'
+import { Link } from 'react-router-dom';
 
 
 function MovieCard({el}) {
   return (
     <>
+    <Link to={`/trailer/${el.id}`}>
       <div className="container">
         <div className="cellphone-container">
           <div className="movie">
@@ -53,6 +55,7 @@ function MovieCard({el}) {
           </div>
         </div>
       </div>
+      </Link>
       {/* <a href="https://dribbble.com/geehm" target="_blank">
         <img className="dribbble-link" src={el.posterurl} />
       </a> */}

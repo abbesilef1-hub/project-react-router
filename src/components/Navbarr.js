@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbarr.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -7,8 +7,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ReactStars from 'react-stars';
+import { Link } from 'react-router-dom';
 
 function Navbarr({settext, setrate}) {
+
+  const [openPages, setOpenPages] = useState(false);
+  const [openBlog, setOpenBlog] = useState(false);
+
   return (
     <Navbar bg="dark" data-bs-theme="dark" className='nav'>
       <Container fluid>
@@ -23,12 +28,50 @@ function Navbarr({settext, setrate}) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" className='active'>Home</Nav.Link>
-            <Nav.Link href="#action2">Pages</Nav.Link>
-            <Nav.Link href="#action2">Movies Trailer</Nav.Link>
-            <Nav.Link href="#action2">Blog</Nav.Link>
-            <Nav.Link href="#action2">Contact Us</Nav.Link>
+
+            {/* home */}
+            <Nav.Link href="#action1"><Link to="/" className="nav-item-link" id='act'>Home</Link></Nav.Link>
+
+            {/* pages */}
+            <Nav.Link
+  className="nav-item-link"
+  onClick={() => setOpenPages(!openPages)}
+>
+  Pages <span id="fleche">v</span>
+</Nav.Link>
+
+{openPages && (
+  <div className="dropdown-menu-custom-page">
+    <Nav.Link href="#ticket" className="itempage">Ticket</Nav.Link>
+    <Nav.Link href="#shows" className="itempage">Shows</Nav.Link>
+    <Nav.Link href="#about" className="itempage">About Us</Nav.Link>
+    <Nav.Link href="#service" className="itempage">Service</Nav.Link>
+  </div>
+)}
+
+          {/* blog */}
+          <Nav.Link
+  className="nav-item-link"
+  onClick={() => setOpenBlog(!openBlog)}
+>
+  Blog <span id="fleche">v</span>
+</Nav.Link>
+
+{openBlog && (
+  <div className="dropdown-menu-custom-blog">
+    <Nav.Link href="#lisy" className="itempage">Blog List</Nav.Link>
+    <Nav.Link href="#clean" className="itempage">Blog Clean</Nav.Link>
+    <Nav.Link href="#image" className="itempage">Blog Image</Nav.Link>
+    <Nav.Link href="#text" className="itempage">Blog Only Text</Nav.Link>
+  </div>
+)}
+            {/* contact */}
+
+            <Nav.Link href="#action2"><Link to="/contact" className="nav-item-link">Contact Us</Link></Nav.Link>
+
           </Nav>
+
+          
           <div className='starnav'>
           <ReactStars count={5} size={24} color2={"#ffd700"} onChange={(newRating)=>setrate(newRating)} />
           </div>

@@ -24,6 +24,7 @@
 .icon h2 {
     color: #e50914;
     margin-top: 7px;
+    margin-bottom: 8px;
 }
 
 /* .icon img {
@@ -31,10 +32,42 @@
 } */
 
 .list {
-    margin: 0px -30px 0px 50px;
+    margin: 0px 0px 0px 60px;
     padding-top: 13px;
-    width: 450px !important;
+    width: 350px !important;
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid red; */
 }
+
+.list a { 
+  font-weight: 500; 
+  font-size: 1rem; 
+  text-decoration: none; 
+  cursor: pointer; 
+  display: inline-block; 
+  background: linear-gradient(to left, white 50%, #e50914 50%); 
+  background-size: 200% 100%; 
+  background-position: right; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  transition: background-position 1s ease, font-weight 0.3s ease; 
+} 
+.list a:hover { 
+  background-position: left !important; 
+  font-weight: 700; 
+} 
+
+  .list a::before { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 100%; 
+    transform-origin: left; 
+    transition: transform 2s ease; 
+    white-space: nowrap; 
+  }
+
 
 .list a {
   font-weight: 500;
@@ -42,36 +75,46 @@
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-
-  background: linear-gradient(to left, white 50%, #e50914 50%);
-  background-size: 200% 100%;
-  background-position: right;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  transition: background-position 1s ease, font-weight 0.3s ease;
+  color: white;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
+
 .list a:hover {
-  background-position: left;
+  color: #e50914;
   font-weight: 700;
 }
 
-.list .nav-link.active {
-  background-position: left;
-  font-weight: bold;
+
+.list a.active {
+  color: #e50914;
+  font-weight: 700;
 }
 
-.list a::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  transform-origin: left;
-  transition: transform 2s ease;
-  white-space: nowrap;
+/* .list a .nav-item-link {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
+
+
+.list a:hover .nav-item-link {
+  color: #e50914 !important;
+  font-weight: 700;
+}
+
+
+#act {
+  color: white;
+}
+
+#act.active {
+  color: #e50914 !important;
+  font-weight: 700;
+} */
+
+
 
 .search {
     margin-top: 10px;
@@ -118,3 +161,110 @@
     margin: 10px 15px 0px 0px;
 }
 
+/* .dropdown-menu1 {
+  position: absolute;
+  background: #1d1b26 ;
+  padding: 10px;
+  border-radius: 0px 0px 8px 8px;
+  margin: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  border: none;
+} */
+/* 
+.itempage {
+
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.itempage:hover {
+
+  color: #28252f !important;
+}
+
+#fleche {
+    width: 2px;
+    height: 2px;
+   
+} */
+
+/* .dropdown-menu2 {
+  position: absolute;
+  background: #1d1b26 ;
+  padding: 10px;
+  border-radius: 0px 0px 8px 8px;
+  margin: 10px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  border: none;
+} */
+
+/* .dropdown-menu1,
+.dropdown-menu2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #1d1b26;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+
+  border: none;
+  min-width: 160px;
+  z-index: 1000;
+} */
+
+
+.dropdown-menu-custom-page {
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  margin: 0px 150px 0px 80px;
+  background: #1d1b26;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 160px;
+  z-index: 1000;
+  line-height: 1.2;
+}
+
+.dropdown-menu-custom-blog {
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  margin: 0px 200px 0px 170px;
+  background: #1d1b26;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 160px;
+  z-index: 1000;
+  line-height: 1.2;
+}
+
+.itempage {
+  padding: 8px;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: white;
+  text-decoration: none;
+}
+
+.itempage:hover {
+  font-weight: 700 !important;
+}

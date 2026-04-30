@@ -2,6 +2,7 @@ import React from 'react'
 import './movielist.css';
 import MovieCard from './MovieCard';
 import AddMovie from './AddMovie';
+import Main from './Main';
 
 function MovieList({movies = [], showAdd, setadd, text, rate}) {
 const search = text ? text.toLowerCase() : "";
@@ -28,7 +29,6 @@ const search = text ? text.toLowerCase() : "";
   ))
 }
 </div>
-  
     </>
   )
 }

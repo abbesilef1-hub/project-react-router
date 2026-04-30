@@ -11,20 +11,20 @@
 
 .titre h1 {
   color: #e50914;
-  margin: 10px;
+  /* margin: 10px; */
   text-align: center;
   font-size: 4rem ;
   font-weight: 700;
-  margin: 75px 0px -20px 0px
+  margin: 75px 0px -20px 0px;
 }
 
 .titre h2 {
   color: white;
-  margin: 10px;
+  /* margin: 10px; */
   text-align: center;
   font-size: 3rem ;
   font-weight: 700;
-  margin: 75px 0px -20px 0px
+  margin: 75px 0px -20px 0px;
 }
 
 /* .titre {
